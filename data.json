@@ -1,0 +1,225 @@
+{
+  "profile": {
+    "name": "Sudhananda Biswas",
+    "title": "Software Engineer (.NET & Angular)",
+    "subtitle": "Mad Coder",
+    "location": "Mirpur 2, Dhaka, Bangladesh",
+    "email": "shbsovon@outlook.com",
+    "email2": "sudhanandabiswas@yahoo.com",
+    "phone": "+8801720000830",
+    "phone2": "+8801632740075",
+    "image": "assets/profile.jpg",
+    "cvLink": "https://1drv.ms/w/s!An0J0ief7HeKivwxVWB6Ounl_Ug93A?e=A3nSr6",
+    "social": {
+      "facebook": "https://www.facebook.com/madcoderBUBT/",
+      "twitter": "https://twitter.com/shbsovon",
+      "linkedin": "https://linkedin.com/in/MadCoderbubt",
+      "github": "https://github.com/MadCoderBubt",
+      "skype": "shbsovon",
+      "hackerrank": "https://hackerrank.com/madcoder_Bubt",
+      "leetcode": "https://leetcode.com/madcoderBubt/",
+      "portfolio": "https://madcoderbubt.github.io/MadCoderPersonal"
+    }
+  },
+  "objective": "Highly skilled software engineer with over 4 years of experience in developing and delivering robust software solutions using .NET and Angular as well as designing and optimizing database schemas with proficiency. Skilled in analyzing complex problems and delivering efficient solutions with a proven record of collaborating with cross-functional teams that meet business requirements.",
+  "about": {
+    "bio": "Highly skilled software engineer with over 4 years of experience in developing and delivering robust software solutions using .NET and Angular as well as designing and optimizing database schemas with proficiency. Skilled in analyzing complex problems and delivering efficient solutions with a proven record of collaborating with cross-functional teams that meet business requirements."
+  },
+  "skills": [
+    {
+      "name": "Visual C#",
+      "category": "Languages",
+      "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+    },
+    {
+      "name": "JavaScript/TypeScript",
+      "category": "Languages",
+      "link": "https://www.typescriptlang.org/docs/"
+    },
+    {
+      "name": "MS SQL Server",
+      "category": "Database",
+      "link": "https://docs.microsoft.com/en-us/sql/sql-server/"
+    },
+    {
+      "name": ".NET Core",
+      "category": "Frameworks",
+      "link": "https://docs.microsoft.com/en-us/dotnet/core/"
+    },
+    {
+      "name": "ASP.NET MVC",
+      "category": "Frameworks",
+      "link": "https://dotnet.microsoft.com/apps/aspnet/mvc"
+    },
+    {
+      "name": "Entity Framework",
+      "category": "Frameworks",
+      "link": "https://docs.microsoft.com/en-us/ef/"
+    },
+    {
+      "name": "RESTful Web API",
+      "category": "Frameworks",
+      "link": "https://dotnet.microsoft.com/apps/aspnet/apis"
+    },
+    {
+      "name": "Angular 6+",
+      "category": "Frameworks",
+      "link": "https://angular.io/docs"
+    },
+    {
+      "name": "Git (GitHub)",
+      "category": "Tools",
+      "link": "https://git-scm.com/doc"
+    },
+    {
+      "name": "xUnit Testing",
+      "category": "Tools",
+      "link": "https://xunit.net/"
+    },
+    {
+      "name": "Docker",
+      "category": "Tools",
+      "link": "https://docs.docker.com/"
+    },
+    {
+      "name": "Microservice",
+      "category": "Architecture",
+      "link": "https://microservices.io/"
+    }
+  ],
+  "abilities": [
+    "Problem Solving",
+    "OOP Concept",
+    "Debugging/Testing",
+    "Fast Learner",
+    "Self-Motivated"
+  ],
+  "languages": [
+    {
+      "name": "Bangla",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Professional"
+    }
+  ],
+  "experience": [
+    {
+      "date": "Oct 2024 - Present",
+      "role": "Web Developer",
+      "company": "COBAIT BD Ltd.",
+      "location": "Dhaka, BD",
+      "description": "Develop, test, & implement new features for the web-platform on client needs.",
+      "skills": "Angular 13+ · Kendo UI · ASP.NET Core · SignalR"
+    },
+    {
+      "date": "Dec 2023 - July 2024",
+      "role": "Software Engineer",
+      "company": "Living-Hub Technologies",
+      "location": "Dhaka, BD",
+      "description": "Develop, test, & implement new features for the web-platform on client needs.",
+      "skills": "ASP.NET core Web API · Docker · Angular 8+ · EF · CQRS · Mediator · PostgreSQL"
+    },
+    {
+      "date": "Sept 2021 - Dec 2023",
+      "role": "Software Engineer (.NET)",
+      "company": "Global Software Architects",
+      "location": "Dhaka, BD",
+      "description": "Developed and maintained software applications using .NET Framework and Angular 8+, resulting in efficient data management and enhanced user experience. Mentoring junior developers to drive their professional development and continuous improvement.",
+      "skills": "ASP.NET Web API · T-SQL Stored Procedures · Angular 8+ · C# · Git · Kendo UI · JavaScript"
+    },
+    {
+      "date": "Nov 2020 - July 2021",
+      "role": ".Net Developer",
+      "company": "Standard Technology Dev. Ltd.",
+      "location": "Dhaka, BD",
+      "description": "Worked on pre-existing WinForms POS system and implemented new features on clients' requirement.",
+      "skills": "C#, MS SQL, RDLC, ADO.NET"
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc Eng. in CSE",
+      "institution": "Bangladesh University of Business & Technology",
+      "location": "Dhaka",
+      "year": "2017 - 2021"
+    },
+    {
+      "degree": "Diploma Eng. in Computer Technology",
+      "institution": "Jashore Polytechnic Institute",
+      "location": "Jashore",
+      "year": "2012 - 2016"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Microservice Learning Project",
+      "category": "Continuous Learning",
+      "description": "Building eCommerce Microservice Module as learning process",
+      "image": "assets/project1.jpg",
+      "link": "#",
+      "repoLink": "https://github.com/madcoderBubt",
+      "liveLink": "",
+      "technologies": [
+        "ASP.NET Core Web-API",
+        "Docker",
+        "MongoDB",
+        "PostgreSQL",
+        "MS SQL",
+        "gRPC-Service"
+      ],
+      "team": "Solo Developer"
+    },
+    {
+      "title": "BookStore",
+      "category": "Web",
+      "description": "ASP Core MVC project for managing bookstore operations",
+      "image": "assets/project2.jpg",
+      "link": "#",
+      "repoLink": "https://github.com/madcoderBubt/BookStore",
+      "liveLink": "",
+      "technologies": [
+        "ASP.NET Core MVC",
+        "Entity Framework",
+        "SQL Server"
+      ],
+      "team": "Group Project Lead"
+    },
+    {
+      "title": "BTRS - Bus Ticket Reservation System",
+      "category": "Desktop",
+      "description": "WinForms application for bus ticket reservation and management",
+      "image": "assets/project3.jpg",
+      "link": "#",
+      "repoLink": "https://github.com/madcoderBubt/BTRS_SDProject",
+      "liveLink": "",
+      "technologies": [
+        "WinForms",
+        "C#",
+        "SQL Server",
+        "ADO.NET"
+      ],
+      "team": "Group Project Lead"
+    },
+    {
+      "title": "Portfolio Site",
+      "category": "Web",
+      "description": "Personal portfolio website to showcase skills and projects",
+      "image": "assets/project4.jpg",
+      "link": "#",
+      "repoLink": "https://github.com/MadCoderBubt/MadCoderPersonal",
+      "liveLink": "https://madcoderbubt.github.io/MadCoderPersonal/",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "team": "Solo Developer"
+    }
+  ],
+  "extraActivities": [
+    "Attended in BUBT Intra-University Programming Contest (BIUPC)",
+    "Lead Software Development Group Projects at study"
+  ]
+}
