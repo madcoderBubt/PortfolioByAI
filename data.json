@@ -155,7 +155,8 @@
   "projects": [
     {
       "title": "Microservice Learning Project",
-      "category": "Continuous Learning",
+      "category": "Web",
+      "status": "Continuous Learning",
       "description": "Building eCommerce Microservice Module as learning process",
       "image": "assets/project1.jpg",
       "link": "#",
@@ -169,11 +170,12 @@
         "MS SQL",
         "gRPC-Service"
       ],
-      "team": "Solo Developer"
+      "team": "Self"
     },
     {
       "title": "BookStore",
       "category": "Web",
+      "status": "Complete",
       "description": "ASP Core MVC project for managing bookstore operations",
       "image": "assets/project2.jpg",
       "link": "#",
@@ -184,11 +186,12 @@
         "Entity Framework",
         "SQL Server"
       ],
-      "team": "Group Project Lead"
+      "team": "Team of 4"
     },
     {
       "title": "BTRS - Bus Ticket Reservation System",
       "category": "Desktop",
+      "status": "Complete",
       "description": "WinForms application for bus ticket reservation and management",
       "image": "assets/project3.jpg",
       "link": "#",
@@ -200,11 +203,12 @@
         "SQL Server",
         "ADO.NET"
       ],
-      "team": "Group Project Lead"
+      "team": "Group of 4"
     },
     {
       "title": "Portfolio Site",
       "category": "Web",
+      "status": "Complete",
       "description": "Personal portfolio website to showcase skills and projects",
       "image": "assets/project4.jpg",
       "link": "#",
@@ -215,7 +219,7 @@
         "CSS",
         "JavaScript"
       ],
-      "team": "Solo Developer"
+      "team": "Self"
     }
   ],
   "extraActivities": [

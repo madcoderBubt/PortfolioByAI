@@ -1,4 +1,3 @@
-console.log('Script loaded!');
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Switcher
     const themeToggle = document.getElementById('theme-toggle');
@@ -169,11 +168,29 @@ document.addEventListener('DOMContentLoaded', () => {
         experience.forEach(job => {
             const item = document.createElement('div');
             item.className = 'timeline-item';
+
+            // Parse skills string into array - handle both · and , separators
+            let skillsArray = [];
+            if (job.skills) {
+                // Check if skills use · separator
+                if (job.skills.includes('·')) {
+                    skillsArray = job.skills.split('·').map(s => s.trim()).filter(s => s);
+                } else {
+                    // Otherwise use comma separator
+                    skillsArray = job.skills.split(',').map(s => s.trim()).filter(s => s);
+                }
+            }
+            const skillsHTML = skillsArray.map(skill =>
+                `<span class="timeline-skill-tag">${skill}</span>`
+            ).join('');
+
             item.innerHTML = `
                 <div class="timeline-date">${job.date}</div>
                 <h3 class="timeline-role">${job.role}</h3>
                 <h4 class="timeline-company">${job.company}</h4>
-                <p>${job.description}</p>
+                ${job.location ? `<div class="timeline-location"><i class="fas fa-map-marker-alt"></i>${job.location}</div>` : ''}
+                <p class="timeline-description">${job.description}</p>
+                ${skillsHTML ? `<div class="timeline-skills">${skillsHTML}</div>` : ''}
             `;
             timeline.appendChild(item);
         });
@@ -184,22 +201,42 @@ document.addEventListener('DOMContentLoaded', () => {
         projects.forEach(project => {
             const card = document.createElement('div');
             card.className = 'project-card';
-            card.style.cursor = 'pointer';
+
+            // Determine if card should be clickable
+            const hasLink = project.liveLink || project.repoLink;
+            if (hasLink) {
+                card.style.cursor = 'pointer';
+            }
+
+            // Generate technology tags (max 3 for card view)
+            const techTags = project.technologies ? project.technologies.slice(0, 3).map(tech =>
+                `<span class="project-tech-tag">${tech}</span>`
+            ).join('') : '';
+
+            // Determine category class
+            const categoryClass = project.category.toLowerCase().replace(/\s+/g, '-');
+
             card.innerHTML = `
                 <div class="project-header">
                     <i class="far fa-folder folder-icon"></i>
                     <div class="project-links">
-                        <a href="${project.link}" target="_blank" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i></a>
+                        ${hasLink ? `<a href="${project.liveLink || project.repoLink}" target="_blank" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i></a>` : ''}
                     </div>
                 </div>
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-desc">${project.description}</p>
-                <div class="project-tech">
-                    <span>${project.category}</span>
+                <div class="project-footer">
+                    ${techTags ? `<div class="project-tech">${techTags}</div>` : ''}
+                    <div class="project-badges">
+                        <span class="project-category ${categoryClass}">${project.category}</span>
+                    </div>
                 </div>
             `;
 
+            // Card click handler - open modal
+            card.style.cursor = 'pointer';
             card.addEventListener('click', () => openModal(project));
+
             projectsGrid.appendChild(card);
         });
     }
@@ -232,6 +269,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <h4>Team</h4>
             <p>${project.team || 'Solo Developer'}</p>
             
+            <h4>Status</h4>
+            <p>${project.status || 'Complete'}</p>
+
             <h4>Technologies</h4>
             ${techHtml}
             
